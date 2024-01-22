@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: rgb(221, 222, 222);
+  min-height: 100vh;
+  min-height: 100lvh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  max-height: 90%;
+  height: 100vh;
+  max-width: 90%;
+  border-radius: 15px;
+  background-color: white;
+  padding: 1em;
+}
+
+.card h1,
+.sub-headline {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+.sub-headline {
+  margin: 1em 0;
+  line-height: 1.35rem;
+}
+
+.checkmark {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  font-size: 1rem;
+  background-color: white;
+  border: 2px solid black;
+  color: white;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.item-container {
+  padding: 1em 0 1em 1em;
+  margin: 1em auto;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  border: 2px solid gray;
+  border-radius: 8px;
+  width: 90%;
+}
+
+.item-container.selected {
+  border: 2px solid blue;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.checkmark.selected {
+  background-color: black;
+}
+
+.best-value-button {
+  width: 5rem;
+  height: 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: blue;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 70%;
+  margin: auto;
+  gap: 1em;
+}
+
+.button {
+  height: 2.5rem;
+  border-radius: 9999px;
+  border: none;
+  font-family: inherit;
+}
+
+.continue.button {
+  background-color: black;
+  color: white;
+}
+
+.paypal.button {
+  background-color: white;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paypal-image {
+  margin-left: 0.65em;
+}
+
+.button-container a {
+  margin: auto;
+  font-size: 0.75rem;
+}
+
+@media (max-height: 676px) {
+  .card {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .paypal-image {
+    margin: 0.25em;
+    width: 60px;
+  }
+  .paypal.button {
+    width: 100%;
+  }
+}

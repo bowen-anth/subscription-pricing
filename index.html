@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription Pricing</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Try FREE for 4 weeks</h1>
+      <p class="sub-headline">
+        We uncover the facts around the clock, all over the globe
+      </p>
+      <div class="item-container one selected">
+        <button class="checkmark one selected">✔</button>
+        <div class="text-container one">
+          <p>MONTHLY</p>
+          <p>4 weeks for free</p>
+          <p>Then $3 every month for the first year</p>
+        </div>
+      </div>
+      <div class="item-container two">
+        <button class="checkmark two">✔</button>
+        <div class="text-container two">
+          <button class="best-value-button">Best value</button>
+          <p>YEARLY</p>
+          <p>4 weeks for free</p>
+          <p>Then $30 for the first year</p>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="continue button">Continue</button>
+        <button class="paypal button">
+          Continue with
+          <!-- PayPal Logo -->
+          <table border="0" cellpadding="10" cellspacing="0" align="center">
+            <tr>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <td align="center">
+                <a
+                  href="https://www.paypal.com/in/webapps/mpp/paypal-popup"
+                  title="How PayPal Works"
+                  onclick="javascript:window.open('https://www.paypal.com/in/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"
+                  ><img
+                    class="paypal-image"
+                    src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png"
+                    border="0"
+                    alt="PayPal Logo"
+                    width="80px"
+                    height="auto"
+                /></a>
+              </td>
+            </tr>
+          </table>
+          <!-- PayPal Logo -->
+        </button>
+        <a href="#" class="link">View more offers</a>
+      </div>
+    </div>
+  </body>
+</html>
